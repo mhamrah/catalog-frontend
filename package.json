@@ -1,0 +1,29 @@
+{
+  "name": "catalog-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-refetch": "^1.0.3",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "PORT=5002 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "antd": "^3.0.0"
+  }
+}
